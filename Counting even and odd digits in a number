@@ -1,0 +1,19 @@
+#include &lt;stdio.h&gt;
+
+int main() {
+int num, digit;
+int evenCount = 0, oddCount = 0;
+printf(&quot;Enter an integer: &quot;);
+scanf(&quot;%d&quot;, &amp;num);
+while(num &gt; 0) {
+digit = num % 10;
+if(digit % 2 == 0)
+evenCount++
+else
+oddCount++;
+num /= 10;
+}
+printf(&quot;Even digits = %d\n&quot;, evenCount);
+printf(&quot;Odd digits = %d\n&quot;, oddCount);
+return 0;
+}
