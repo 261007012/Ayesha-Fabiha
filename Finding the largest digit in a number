@@ -1,0 +1,14 @@
+#include &lt;stdio.h&gt;
+int main() {
+int num, digit, largest = 0;
+printf(&quot;Enter an integer: &quot;);
+scanf(&quot;%d&quot;, &amp;num);
+while(num &gt; 0) {
+digit = num % 10;
+if(digit &gt; largest)
+largest = digit;
+num /= 10;
+}
+printf(&quot;Largest digit = %d\n&quot;, largest);
+return 0;
+}
