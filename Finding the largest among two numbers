@@ -1,0 +1,11 @@
+#include &lt;stdio.h&gt;
+int main() {
+int a, b;
+printf(&quot;Enter two integers: &quot;);
+scanf(&quot;%d %d&quot;, &amp;a, &amp;b);
+if(a &gt; b)
+printf(&quot;Largest Number = %d\n&quot;, a);
+else
+printf(&quot;Largest Number = %d\n&quot;, b);
+return 0;
+}
