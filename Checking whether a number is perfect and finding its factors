@@ -1,0 +1,21 @@
+#include &lt;stdio.h&gt;
+
+int main() {
+int num, i, sum = 0;
+
+printf(&quot;Enter a positive integer: &quot;);
+scanf(&quot;%d&quot;, &amp;num);
+printf(&quot;Factors: &quot;);
+for(i = 1; i &lt; num; i++) {
+if(num % i == 0) {
+printf(&quot;%d &quot;, i);
+sum += i;
+}
+}
+printf(&quot;\n&quot;);
+if(sum == num)
+printf(&quot;%d is a Perfect Number.\n&quot;, num);
+else
+printf(&quot;%d is not a Perfect Number.\n&quot;, num);
+return 0;
+}
